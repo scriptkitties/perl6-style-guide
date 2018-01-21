@@ -41,6 +41,29 @@ sub foo (
 
 == Styles to avoid
 
+=== `else`
+Using an `else` is almost never necesary, yet they add a lot of cognitive load
+to the source code. As such, you should try to write your code in such a way
+that an `else` is not necessary. If you do find a circumstance that you *must*
+use an `else` block, the `else` must go on the same line as the closing `}` of
+the foregoing `if`:
+
+[NOTE]
+====
+This is still open for discussion!
+====
+
+[source,perl6]
+----
+if ($some-condition) {
+	…
+} else {
+	…
+}
+----
+
+=== Misc
+
 * Avoid using $_, unless needed.
 [source,perl6]
 ----
