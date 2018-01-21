@@ -48,6 +48,31 @@ being used:
 use v6.c;
 ----
 
+== Shebang
+All Perl 6 source files must have a
+https://en.wikipedia.org/wiki/Shebang_(Unix)[shebang]. For scripts that are
+intended to be executed as programs, this would be the following:
+
+[souce,sh]
+----
+#! /usr/bin/env perl6
+----
+
+*Never* refer to a hardcoded perl6 path, as this is likely to break on the
+setups of others.
+
+For modules that are *not* intended to be ran as a standalone program, the
+following shebang is to be used:
+
+[source,sh]
+----
+#! /usr/bin/env false
+----
+
+This will ensure the script won't be ran as a standalone program. If it's
+included by a program as a module, the shebang is simply interpreted as a
+comment, and thus ignored.
+
 == POD comments
 Apply POD comments to your subs. A small description on the method should go
 directly above it, and descriptions on the arguments should go above the
