@@ -28,6 +28,13 @@ Lines in Perl 6 source files should not extend the *120 character* mark.
 Exceptions for this are cases where the source is easier to understand by
 surpassing the 120 character limit.
 
+== Unicode operators
+Unicode operators should be used in favour of the longer ASCII operators.
+Depending on your editor, plugins may already be available that convert them on
+the fly:
+
+- https://github.com/vim-perl/vim-perl[vim]
+
 == POD comments
 Apply POD comments to your subs. A small description on the method should go
 directly above it, and descriptions on the arguments should go above the
