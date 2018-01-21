@@ -3,8 +3,8 @@
 
 This is a styleguide for writing https://perl6.org/[Perl 6] code. It's still in
 it's early stages, and feedback would be greatly appreciated. Also note that
-this is not a definitive set of rules, you're can (and should!) write in
-whatever style *you* prefer in the end.
+this is a set of rules for https://scriptkitties.church[Scriptkitties]
+projects, not necesarily for you.
 
 == Indentation style
 The preferred indentation style for Scriptkitties projects is to use **tabs**
