@@ -1,4 +1,28 @@
 = Perl 6 Style Guide
+:toc: preamble
+
+This is a styleguide for writing https://perl6.org/[Perl 6] code. It's still in
+it's early stages, and feedback would be greatly appreciated. Also note that
+this is not a definitive set of rules, you're can (and should!) write in
+whatever style *you* prefer in the end.
+
+== POD comments
+Apply POD comments to your subs. A small description on the method should go
+directly above it, and descriptions on the arguments should go above the
+arguments themself:
+
+[source,perl6]
+----
+#| A small description on the sub foo. This is returned on foo.WHY.
+sub foo (
+	#| What to expect of the bar argument
+	Str:D $bar,
+) is export {
+	…
+}
+----
+
+== Styles to avoid
 
 * Avoid using $_, unless needed.
 [source,perl6]
