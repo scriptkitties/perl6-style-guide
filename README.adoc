@@ -23,6 +23,11 @@ sub foo (
 Aligning code is *not* required, but is allowed if you think it will improve
 readability of the code.
 
+== Line length
+Lines in Perl 6 source files should not extend the *120 character* mark.
+Exceptions for this are cases where the source is easier to understand by
+surpassing the 120 character limit.
+
 == POD comments
 Apply POD comments to your subs. A small description on the method should go
 directly above it, and descriptions on the arguments should go above the
