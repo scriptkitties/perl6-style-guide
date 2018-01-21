@@ -39,6 +39,15 @@ the fly:
 Source files must use `.pm6` and `.pl6` as extensions to properly indicate they
 are Perl 6 files, and not Perl 5.
 
+== `use` for the Perl 6 version
+Every script must have a `use` statement to indicate which version of Perl 6 is
+being used:
+
+[source,perl6]
+----
+use v6.c;
+----
+
 == POD comments
 Apply POD comments to your subs. A small description on the method should go
 directly above it, and descriptions on the arguments should go above the
