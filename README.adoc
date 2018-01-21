@@ -35,6 +35,10 @@ the fly:
 
 - https://github.com/vim-perl/vim-perl[vim]
 
+== Source file name extensions
+Source files must use `.pm6` and `.pl6` as extensions to properly indicate they
+are Perl 6 files, and not Perl 5.
+
 == POD comments
 Apply POD comments to your subs. A small description on the method should go
 directly above it, and descriptions on the arguments should go above the
