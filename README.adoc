@@ -6,6 +6,23 @@ it's early stages, and feedback would be greatly appreciated. Also note that
 this is not a definitive set of rules, you're can (and should!) write in
 whatever style *you* prefer in the end.
 
+== Indentation style
+The preferred indentation style for Scriptkitties projects is to use **tabs**
+for indention. If you need to *align* things, however, you should use spaces:
+
+[source,perl6]
+----
+sub foo (
+	%bar,
+) {
+	%bar<some-index>    = "Some string";
+	%bar<another-index> = "Another string";
+}
+----
+
+Aligning code is *not* required, but is allowed if you think it will improve
+readability of the code.
+
 == POD comments
 Apply POD comments to your subs. A small description on the method should go
 directly above it, and descriptions on the arguments should go above the
@@ -28,10 +45,10 @@ sub foo (
 [source,perl6]
 ----
 for @array -> $element { # good
-  say $element;
+	say $element;
 }
 for @array {
-  .say # good
+	.say # good
 }
 .say for @array; # better
 ----
